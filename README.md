@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+1. html content
+2. linking/ making the flow
+3. testing
+4. database
+5. css
+6. deployment
