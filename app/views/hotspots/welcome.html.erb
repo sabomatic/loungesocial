@@ -8,21 +8,18 @@
 <h2>I want to be social</h2>
 
 
-<form>
-  <div class="row">
-    <div class="small-8 columns"></div>
-    <div class="small-4 columns"></div>
+<%= form_for :hotspot, url: find_path do |f| %>
 
-  </div>
+  <p>
+    <%= f.label :train, "Enter your train number" %><br>
+    <%= f.text_field :train %>
 
-      <label>
-      <input type="text" placeholder="Enter your train number" />
-      </label>
+      <p>
+        <%= f.submit "Search for Hotspot" %>
+      </p>
+  </p>
+<% end %>
 
-    <a href="/screens/status" class="button">status</a>
-    <a href="/screens/create" class="button">create</a>
-
-</form>
 
 <br>
 <br>
