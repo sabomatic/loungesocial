@@ -1,0 +1,18 @@
+<h1>Social hotspot created by <strong><%= @hotspot.name %></strong> at this location</h1>
+
+
+
+<p>
+  <strong>Car number:</strong>
+  <%= @hotspot.car %>
+</p>
+
+<p>
+  <strong>Seat number:</strong>
+  <%= @hotspot.seat %>
+</p>
+
+
+<p>Can't find <strong><%= @hotspot.name %></strong>? Hotspot inactive? <br>
+  Click here<br>
+  <a href="/hotspots/new" class="button">Reset</a> </p>

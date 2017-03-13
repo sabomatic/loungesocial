@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :hotspots
+
   get 'screens/landing'
 
   get 'screens/create'

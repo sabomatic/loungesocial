@@ -1,0 +1,46 @@
+<h1>Welcome to Social Lounge</h1>
+
+<img src="http://3w6kx9401skz1bup4i1gs9ne.wpengine.netdna-cdn.com/wp-content/uploads/2016/09/telegraph-1.jpg" alt="Social Hotspot">
+
+<!-- insert image of the social lounge -->
+
+<h2>I want to be social</h2>
+<p>Simply enter your train number below:<p/>
+
+<%= form_for :hotspot, url: hotspots_path do |f| %>
+
+<!-- # <% if @hotspot.errors.any? %>
+#   <div id="error_explanation">
+#     <h2>
+#       <%= pluralize(@hotspot.errors.count, "error") %> prohibited
+#       this hotspot from being saved:
+#     </h2>
+#     <ul>
+#       <% @hotspot.errors.full_messages.each do |msg| %>
+#         <li><%= msg %></li>
+#       <% end %>
+#     </ul>
+#   </div>
+# <% end %> -->
+
+  <p>
+    <%= f.label :train_numer %><br>
+    <%= f.text_field :train %>
+
+      <p>
+        <%= f.submit %>
+      </p>
+  </p>
+
+
+
+<br>
+<br>
+<br>
+
+<h2>What is Social Lounge?</h2>
+<p>Want to socialize and interact with other people?<br>
+  This web app lets you create a " social hotspot" area within the train.<br>
+  Just enter your train, car and seat numbers. The area around this seat will become the lounge. Anyone else who checks for this train number will be able to see the hotspot adress within the train<br>
+
+<% end %>

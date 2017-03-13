@@ -30,3 +30,7 @@ Things you may want to cover:
 4. database
 5. css
 6. deployment
+
+next
+1. backend interface
+2.

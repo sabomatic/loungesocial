@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170302145338) do
+ActiveRecord::Schema.define(version: 20170309170619) do
 
   create_table "hotspots", force: :cascade do |t|
-    t.string "name"
-    t.string "train"
-    t.string "car"
-    t.string "seat"
+    t.string   "train"
+    t.string   "car"
+    t.string   "seat"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,0 +1,37 @@
+<h1>Create a new social hotspot!</h1>
+
+<%= form_for :hotspot, url: hotspots_path do |f| %>
+
+<% if @hotspot.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@hotspot.errors.count, "error") %> prohibited
+      this hotspot from being saved:
+    </h2>
+    <ul>
+      <% @hotspot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <p>
+    <%= f.label :car_number %><br>
+    <%= f.text_field :car %>
+  </p>
+
+  <p>
+    <%= f.label :seat_number %><br>
+    <%= f.text_area :seat %>
+  </p>
+
+  <p>
+    <%= f.label :your_name %><br>
+    <%= f.text_area :name %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
